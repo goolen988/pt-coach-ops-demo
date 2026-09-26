@@ -1,0 +1,396 @@
+{
+  "schema_version": "1.0",
+  "mode": "synthetic",
+  "timezone": "Australia/Sydney",
+  "as_of": "2026-09-28T07:00:00+10:00",
+  "review_start": "2026-09-14",
+  "review_end": "2026-09-28",
+  "planning_start": "2026-09-28",
+  "planning_end": "2026-10-05",
+  "rules": {
+    "confirmed_miss_streak": 2,
+    "contact_cooldown_days": 3,
+    "max_source_age_hours": 48,
+    "calendar_buffer_minutes": 15,
+    "admin_block_minutes": 30
+  },
+  "working_hours": {
+    "0": [
+      "09:00",
+      "17:00"
+    ],
+    "1": [
+      "09:00",
+      "17:00"
+    ],
+    "2": [
+      "09:00",
+      "17:00"
+    ],
+    "3": [
+      "09:00",
+      "17:00"
+    ],
+    "4": [
+      "09:00",
+      "17:00"
+    ]
+  },
+  "sources": {
+    "attendance": {
+      "label": "Synthetic attendance fixture \u2014 not a real system export",
+      "coverage_start": "2026-09-14",
+      "coverage_end": "2026-09-28",
+      "exported_at": "2026-09-28T06:30:00+10:00",
+      "complete": true
+    },
+    "checkins": {
+      "label": "Synthetic checkins fixture \u2014 not a real system export",
+      "coverage_start": "2026-09-14",
+      "coverage_end": "2026-09-28",
+      "exported_at": "2026-09-28T06:30:00+10:00",
+      "complete": true
+    },
+    "calendar": {
+      "label": "Synthetic calendar fixture \u2014 not a real system export",
+      "coverage_start": "2026-09-28",
+      "coverage_end": "2026-10-05",
+      "exported_at": "2026-09-28T06:30:00+10:00",
+      "complete": true
+    },
+    "actions": {
+      "label": "Synthetic sent-contact history fixture \u2014 not a real system export",
+      "coverage_start": "2026-09-14",
+      "coverage_end": "2026-09-28",
+      "exported_at": "2026-09-28T06:30:00+10:00",
+      "complete": true
+    }
+  },
+  "clients": [
+    {
+      "id": "C01",
+      "alias": "Alex (fictional)",
+      "status": "active",
+      "attendance_complete": true,
+      "checkins_complete": true,
+      "checkin_expected": false,
+      "checkin_due": null,
+      "contact_allowed": true
+    },
+    {
+      "id": "C02",
+      "alias": "Blair (fictional)",
+      "status": "active",
+      "attendance_complete": true,
+      "checkins_complete": true,
+      "checkin_expected": false,
+      "checkin_due": null,
+      "contact_allowed": true
+    },
+    {
+      "id": "C03",
+      "alias": "Casey (fictional)",
+      "status": "paused",
+      "attendance_complete": true,
+      "checkins_complete": true,
+      "checkin_expected": false,
+      "checkin_due": null,
+      "contact_allowed": true
+    },
+    {
+      "id": "C04",
+      "alias": "Drew (fictional)",
+      "status": "active",
+      "attendance_complete": true,
+      "checkins_complete": true,
+      "checkin_expected": true,
+      "checkin_due": "2026-09-26",
+      "contact_allowed": true
+    },
+    {
+      "id": "C05",
+      "alias": "Eden (fictional)",
+      "status": "active",
+      "attendance_complete": false,
+      "checkins_complete": true,
+      "checkin_expected": false,
+      "checkin_due": null,
+      "contact_allowed": true
+    },
+    {
+      "id": "C06",
+      "alias": "Flynn (fictional)",
+      "status": "active",
+      "attendance_complete": true,
+      "checkins_complete": true,
+      "checkin_expected": false,
+      "checkin_due": null,
+      "contact_allowed": true
+    },
+    {
+      "id": "C07",
+      "alias": "Gray (fictional)",
+      "status": "active",
+      "attendance_complete": true,
+      "checkins_complete": true,
+      "checkin_expected": false,
+      "checkin_due": null,
+      "contact_allowed": true
+    },
+    {
+      "id": "C08",
+      "alias": "Harper (fictional)",
+      "status": "active",
+      "attendance_complete": true,
+      "checkins_complete": true,
+      "checkin_expected": false,
+      "checkin_due": null,
+      "contact_allowed": false
+    }
+  ],
+  "sessions": [
+    {
+      "id": "S01-1",
+      "client_id": "C01",
+      "date": "2026-09-15",
+      "status": "completed",
+      "source_ref": "SYNTHETIC register / S01-1"
+    },
+    {
+      "id": "S01-2",
+      "client_id": "C01",
+      "date": "2026-09-18",
+      "status": "completed",
+      "source_ref": "SYNTHETIC register / S01-2"
+    },
+    {
+      "id": "S01-3",
+      "client_id": "C01",
+      "date": "2026-09-22",
+      "status": "missed_confirmed",
+      "source_ref": "SYNTHETIC register / S01-3"
+    },
+    {
+      "id": "S01-4",
+      "client_id": "C01",
+      "date": "2026-09-25",
+      "status": "missed_confirmed",
+      "source_ref": "SYNTHETIC register / S01-4"
+    },
+    {
+      "id": "S02-1",
+      "client_id": "C02",
+      "date": "2026-09-15",
+      "status": "completed",
+      "source_ref": "SYNTHETIC register / S02-1"
+    },
+    {
+      "id": "S02-2",
+      "client_id": "C02",
+      "date": "2026-09-18",
+      "status": "unrecorded",
+      "source_ref": "SYNTHETIC register / S02-2"
+    },
+    {
+      "id": "S02-3",
+      "client_id": "C02",
+      "date": "2026-09-22",
+      "status": "missed_confirmed",
+      "source_ref": "SYNTHETIC register / S02-3"
+    },
+    {
+      "id": "S03-1",
+      "client_id": "C03",
+      "date": "2026-09-15",
+      "status": "missed_confirmed",
+      "source_ref": "SYNTHETIC register / S03-1"
+    },
+    {
+      "id": "S03-2",
+      "client_id": "C03",
+      "date": "2026-09-18",
+      "status": "missed_confirmed",
+      "source_ref": "SYNTHETIC register / S03-2"
+    },
+    {
+      "id": "S04-1",
+      "client_id": "C04",
+      "date": "2026-09-15",
+      "status": "completed",
+      "source_ref": "SYNTHETIC register / S04-1"
+    },
+    {
+      "id": "S04-2",
+      "client_id": "C04",
+      "date": "2026-09-18",
+      "status": "completed",
+      "source_ref": "SYNTHETIC register / S04-2"
+    },
+    {
+      "id": "S05-1",
+      "client_id": "C05",
+      "date": "2026-09-15",
+      "status": "missed_confirmed",
+      "source_ref": "SYNTHETIC register / S05-1"
+    },
+    {
+      "id": "S05-2",
+      "client_id": "C05",
+      "date": "2026-09-18",
+      "status": "missed_confirmed",
+      "source_ref": "SYNTHETIC register / S05-2"
+    },
+    {
+      "id": "S06-1",
+      "client_id": "C06",
+      "date": "2026-09-15",
+      "status": "completed",
+      "source_ref": "SYNTHETIC register / S06-1"
+    },
+    {
+      "id": "S06-2",
+      "client_id": "C06",
+      "date": "2026-09-18",
+      "status": "completed",
+      "source_ref": "SYNTHETIC register / S06-2"
+    },
+    {
+      "id": "S06-3",
+      "client_id": "C06",
+      "date": "2026-09-22",
+      "status": "completed",
+      "source_ref": "SYNTHETIC register / S06-3"
+    },
+    {
+      "id": "S06-4",
+      "client_id": "C06",
+      "date": "2026-09-25",
+      "status": "completed",
+      "source_ref": "SYNTHETIC register / S06-4"
+    },
+    {
+      "id": "S07-1",
+      "client_id": "C07",
+      "date": "2026-09-15",
+      "status": "completed",
+      "source_ref": "SYNTHETIC register / S07-1"
+    },
+    {
+      "id": "S07-2",
+      "client_id": "C07",
+      "date": "2026-09-18",
+      "status": "missed_confirmed",
+      "source_ref": "SYNTHETIC register / S07-2"
+    },
+    {
+      "id": "S07-3",
+      "client_id": "C07",
+      "date": "2026-09-22",
+      "status": "missed_confirmed",
+      "source_ref": "SYNTHETIC register / S07-3"
+    },
+    {
+      "id": "S08-1",
+      "client_id": "C08",
+      "date": "2026-09-15",
+      "status": "completed",
+      "source_ref": "SYNTHETIC register / S08-1"
+    },
+    {
+      "id": "S08-2",
+      "client_id": "C08",
+      "date": "2026-09-18",
+      "status": "missed_confirmed",
+      "source_ref": "SYNTHETIC register / S08-2"
+    },
+    {
+      "id": "S08-3",
+      "client_id": "C08",
+      "date": "2026-09-22",
+      "status": "missed_confirmed",
+      "source_ref": "SYNTHETIC register / S08-3"
+    },
+    {
+      "id": "S01-C",
+      "client_id": "C01",
+      "date": "2026-09-26",
+      "status": "cancelled",
+      "source_ref": "SYNTHETIC register / S01-C"
+    },
+    {
+      "id": "S02-R",
+      "client_id": "C02",
+      "date": "2026-09-26",
+      "status": "rescheduled",
+      "source_ref": "SYNTHETIC register / S02-R"
+    }
+  ],
+  "checkins": [],
+  "actions": [
+    {
+      "id": "A07-1",
+      "client_id": "C07",
+      "date": "2026-09-27",
+      "status": "sent",
+      "source_ref": "SYNTHETIC coach action log / A07-1"
+    },
+    {
+      "id": "A01-D",
+      "client_id": "C01",
+      "date": "2026-09-27",
+      "status": "draft",
+      "source_ref": "SYNTHETIC unsent draft / A01-D"
+    }
+  ],
+  "calendar": [
+    {
+      "id": "E01",
+      "start": "2026-09-28T09:00:00+10:00",
+      "end": "2026-09-28T10:00:00+10:00",
+      "status": "confirmed",
+      "source_ref": "SYNTHETIC calendar / E01"
+    },
+    {
+      "id": "E02",
+      "start": "2026-09-28T09:30:00+10:00",
+      "end": "2026-09-28T10:30:00+10:00",
+      "status": "confirmed",
+      "source_ref": "SYNTHETIC calendar / E02"
+    },
+    {
+      "id": "E03",
+      "start": "2026-09-28T10:30:00+10:00",
+      "end": "2026-09-28T11:00:00+10:00",
+      "status": "confirmed",
+      "source_ref": "SYNTHETIC calendar / E03"
+    },
+    {
+      "id": "E04",
+      "start": "2026-09-28T12:00:00+10:00",
+      "end": "2026-09-28T13:00:00+10:00",
+      "status": "cancelled",
+      "source_ref": "SYNTHETIC calendar / E04"
+    },
+    {
+      "id": "E05",
+      "start": "2026-09-29T09:00:00+10:00",
+      "end": "2026-09-29T10:00:00+10:00",
+      "status": "tentative",
+      "source_ref": "SYNTHETIC calendar / E05"
+    },
+    {
+      "id": "E06",
+      "start": "2026-09-30T09:00:00+10:00",
+      "end": "2026-09-30T11:00:00+10:00",
+      "status": "confirmed",
+      "source_ref": "SYNTHETIC calendar / E06"
+    },
+    {
+      "id": "E07",
+      "start": "2026-10-04T09:00:00+11:00",
+      "end": "2026-10-04T10:00:00+11:00",
+      "status": "confirmed",
+      "source_ref": "SYNTHETIC calendar / E07"
+    }
+  ]
+}
